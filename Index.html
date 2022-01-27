@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+  padding: 0px;
+    }
+   ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color:rgba(0, 0, 0, 0.644);
+}
+
+li {
+    
+  float: right;
+}
+
+li a {
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    color:black;
+  background-color: whitesmoke;
+}
+
+/* .active {
+  background-color: whitesmoke;
+} */
+#banner{
+    margin: 0px;
+        padding: 0px;
+        background-image: url(dream.jpeg);
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30%;
+
+}
+h1{
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+h4{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+ margin-left: 600px;
+ margin-top: 50px;
+}
+.button1 {
+  background-color: rgba(54, 98, 194, 0.575);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#middle{
+    background-color: white;
+    height: 500px;
+}
+#footer{
+    background-color: black;
+    
+    color: white;
+    height: 25%;
+    margin: 0px;
+    padding: 70px 0;
+   
+}
+
+.container{
+  max-width: 1900px;
+  margin: auto;
+  
+  overflow: auto;
+  margin-top: 40px;
+  margin-left: 40px;
+  height: 45%;
+  
+}
+.row{
+  margin: 20px;
+  border: 3px solid gainsboro;
+  box-shadow:  1px 10px gainsboro;
+  float: left;
+  width: 390px;
+}
+.row img{
+  width: 350px;
+  height: 150px;
+  padding: 10px 10px 10px 20px;
+  /* padding: 20px; */
+ 
+}
+/* .under{
+  padding: 15px;
+  
+}
+.under img{
+  height: 40px;
+  width: 40px;
+  float: left;
+ margin-bottom: 20px;
+ margin-top: 10px;
+ 
+} */
+.under img{
+  height: 40px;
+  width: 40px;
+  float: left;
+  
+  
+
+  
+}
+hr{
+  margin-top: 20px;
+  height: 3px;
+  color: gainsboro;
+  background: gainsboro;
+}
+.middle{
+  margin-left: 50px;
+  margin-right: 50px;
+  overflow: auto;
+}
+.middle1 {
+  /* width: 100%;
+  margin-top: 20px; */
+  /* overflow: auto; */
+  border-top: 3px solid gainsboro;
+  border-bottom: 3px solid gainsboro;
+
+
+  max-width: 1900px;
+  margin: auto;
+  
+  overflow: auto;
+  margin-top: 40px;
+  margin-left: 40px;
+  height: 45%;
+  
+  display: flex;
+  
+}
+
+.m1{
+  width: 33.33%;
+  overflow: auto;
+}
+.m1  img {
+
+  height: 80px;
+  width: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 90px;
+  float: left;
+}
+.m1 p{
+  margin-top: 30px;
+  margin-left: 10px;
+  
+}
+.extra{
+  height: 200px;
+  background-color: white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container1{
+	max-width: 1170px;
+	margin:auto;
+}
+.row1{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.dummy_page {
+  height: 200px;
+  width: 100%;
+  background-color: #f0f0f0;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 60px 0px;
+}
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: black;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: black;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.active{
+  font-family: fantasy;
+  color: #999999;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+
+</style>
+
+<body>
+  <div class="main">
+    <div id="banner">
+    <ul>
+        <li><a href="#home">How It works</a></li>
+        
+        <li><a href="register.html" target="iframe_a">sign up</a></li>
+        <li><a href="login.html" target="iframe_a">login</a></li>
+        <li style="float:left"><a class="active" href="#about">Insight</a></li>
+      </ul>
+      
+     
+          <h1>Dont Ignore Your Dreams
+          </h1>
+          <br><br><br>
+          <h4><b>The 5 Secrets</b> paint a potrait of position man </h4>
+          
+          <h4>The 5 Secretspaint a potrait of position man nnanananna ananaaannan </h4>
+          <h4>The 5 Secrets paint a potrait of position man </h4>
+          <h4>The 5 Secrets paint a potrait </h4>
+          
+          <a href="#" class="button">Show How It Works</a> &nbsp; &nbsp; <a href="#" class="button1">Join Us</a>
+     </div>
+     
+  <div class="extra">
+    <iframe src="middle.html" name="iframe_a" height="500px" width="100%" style="border: none;" title="Iframe Example"></iframe>
+
+   
+    <div class="footer">
+      <div class="contain">
+      <div class="col">
+        <h1>Company</h1>
+        <ul>
+          <li>About</li>
+          <li>Mission</li>
+          <li>Services</li>
+          <li>Social</li>
+          <li>Get in touch</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Products</h1>
+        <ul>
+          <li>About</li>
+          <li>Mission</li>
+          <li>Services</li>
+          <li>Social</li>
+          <li>Get in touch</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Accounts</h1>
+        <ul>
+          <li>About</li>
+          <li>Mission</li>
+          <li>Services</li>
+          <li>Social</li>
+          <li>Get in touch</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Resources</h1>
+        <ul>
+          <li>Webmail</li>
+          <li>Redeem code</li>
+          <li>WHOIS lookup</li>
+          <li>Site map</li>
+          <li>Web templates</li>
+          <li>Email templates</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Support</h1>
+        <ul>
+          <li>Contact us</li>
+          <li>Web chat</li>
+          <li>Open ticket</li>
+        </ul>
+      </div>
+     
+       
+    <div class="clearfix"></div>
+    </div>
+    </div>
+  </div>
+</div>
+<br>
+
+  <!-- <footer>nn</footer> -->
+     
+</body>
+</html> 
